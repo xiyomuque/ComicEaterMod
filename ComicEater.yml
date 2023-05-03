@@ -1,0 +1,180 @@
+---
+seriesFolders:
+- seriesRoot: \Users\aleksandrsuvorov\UpscaleMangaR\
+  queueFolders:
+  - \Users\aleksandrsuvorov\UpscaleManga\
+  folderPatterns:
+  - "{{authors}}「{{seriesName}} 全{{totalVolumes}}巻」\\**\\*"
+  - "{{authors}}「{{seriesName}}」\\**\\*"
+  - "[{{authors}}]{{seriesName}}全{{totalVolumes}}\\**\\*"
+  - "[{{authors}}]{{seriesName}}第{{volumeNumber}}巻\\**\\*"
+  - "[{{authors}}]{{seriesName}}\\**\\*"
+  - "【{{authors}}】{{seriesName}}全{{totalVolumes}}\\**\\*"
+  - "【{{authors}}】{{seriesName}}第{{volumeNumber}}巻\\**\\*"
+  - "{{seriesName}}- 第{{volumeNumber}}巻\\**\\*"
+  - "{{seriesName}}第{{volumeNumber}}巻\\**\\*"
+  - "【{{authors}}】{{seriesName}}\\**\\*"
+  - "{{seriesName}} 全{{totalVolumes}}\\**\\*"
+  - "{{seriesName}} vol{{volumeNumber}}\\**\\*"
+  - "{{seriesName}} v{{volumeNumber}}\\**\\*"
+  - "{{seriesName}} c{{volumeNumber}}\\**\\*"
+  - "{{seriesName}} {{volumeNumber}}\\**\\*"
+  - "{{seriesName}}\\**\\*"
+  filePatterns:
+  - "[{{authors}}]{{seriesName}} ({{publisher}} {{publishYear}}年)"
+  - "{{authors}}「{{seriesName}} 第{{volumeNumber}}巻」"
+  - "{{authors}}「{{seriesName}}」"
+  - "[{{authors}}]{{seriesName}} v{{volumeNumber}}"
+  - "[{{authors}}]{{seriesName}} c{{volumeNumber}}"
+  - "[{{authors}}]{{seriesName}} {{volumeNumber}}話"
+  - "[{{authors}}]{{seriesName}}- 第{{volumeNumber}}"
+  - "[{{authors}}]{{seriesName}}第{{volumeNumber}}"
+  - "[{{authors}}]{{seriesName}} {{volumeNumber}}"
+  - "[{{authors}}]{{seriesName}}"
+  - "【{{authors}}】{seriesName}} v{{volumeNumber}}"
+  - "【{{authors}}】{{seriesName}} c{{volumeNumber}}"
+  - "【{{authors}}】{{seriesName}} {{volumeNumber}}話"
+  - "【{{authors}}】{{seriesName}}- 第{{volumeNumber}}"
+  - "【{{authors}}】{{seriesName}}第{{volumeNumber}}"
+  - "【{{authors}}】{{seriesName}} {{volumeNumber}}"
+  - "【{{authors}}】{{seriesName}}"
+  - "{{seriesName}} 全{{totalVolumes}}"
+  - "{{seriesName}}- 第{{volumeNumber}}"
+  - "{{seriesName}}第{{volumeNumber}}"
+  - "{{seriesName}} vol{{volumeNumber}}"
+  - "{{seriesName}} v{{volumeNumber}}"
+  - "{{seriesName}} c{{volumeNumber}}"
+  - "{{seriesName}} - Raw Chapter{{volumeNumber}}"
+  - "{{seriesName}} {{volumeNumber}}話"
+  - "第{{volumeNumber}}話"
+  - "{{seriesName}}({{volumeNumber}})"
+  - "{{seriesName}} {{volumeNumber}}"
+  - "{{volumeNumber}}"
+  - "{{seriesName}}"
+  titleNamingConventions:
+  - "{{seriesName}} - 第{{volumeRange}}巻"
+  - "{{seriesName}} - 第{{volumeNumber}}{{volumeVariant}}巻"
+  - "{{seriesName}} - 第{{volumeNumber}}巻"
+  outputNamingConventions:
+  - "{{seriesRoot}}{{seriesName}}\\[{{authors}}] {{seriesName}} - 第{{volumeRange}}巻"
+  - "{{seriesRoot}}{{seriesName}}\\[{{authors}}] {{seriesName}} - 第{{volumeNumber}}{{volumeVariant}}巻"
+  - "{{seriesRoot}}{{seriesName}}\\[{{authors}}] {{seriesName}} - 第{{volumeNumber}}巻"
+  - "{{seriesRoot}}{{seriesName}}\\[{{authors}}] {{seriesName}} - 第{{volumeNumber}}話"
+  - "{{seriesRoot}}{{seriesName}}\\{{seriesName}} - 第{{volumeRange}}巻"
+  - "{{seriesRoot}}{{seriesName}}\\{{seriesName}} - 第{{volumeNumber}}{{volumeVariant}}巻"
+  - "{{seriesRoot}}{{seriesName}}\\{{seriesName}} - 第{{volumeNumber}}巻"
+  - "{{seriesRoot}}{{seriesName}}\\{{seriesName}} - 第{{volumeNumber}}話"
+  splitAuthorsBy:
+  - 'ｘ'
+  - 'x'
+  shouldDownloadCover: false
+
+- seriesRoot: \Users\aleksandrsuvorov\UpscaleMangaR2\
+  queueFolders:
+  - \Users\aleksandrsuvorov\UpscaleManga2\
+  folderPatterns:
+  - "{{seriesName}}\\*"
+  filePatterns:
+  - "{{seriesName}} {{publishYear}}年{{volumeNumber}}月号{{notes}}"
+  - "{{seriesName}}-{{publishYear}}年{{volumeNumber}}"
+  - "{{seriesName}} {{publishYear}}年{{volumeNumber}}"
+  - "{{seriesName}} {{publishYear}} No{{volumeNumber}}"
+  - "{{seriesName}} {{publishYear}}-{{volumeNumber}}"
+  - "{{publishYear}}-{{volumeNumber}}"
+  - "{{publishYear}}年{{volumeNumber}}"
+  - "{{seriesName}} {{volumeNumber}}"
+  - "{{volumeNumber}}"
+  - "{{seriesName}}"
+
+  outputNamingConventions:
+  - "{{seriesRoot}}{{seriesName}}\\{{seriesName}}年{{volumeRange}}号"
+  - "{{seriesRoot}}{{seriesName}}\\{{seriesName}}年{{volumeNumber}}号"
+  - "{{seriesRoot}}{{seriesName}}\\{{fileName}}"
+  titleNamingConventions:
+  - "{{seriesName}}年{{volumeRange}}号"
+  - "{{seriesName}}年{{volumeNumber}}号"
+  - "{{fileName}}"
+  shouldDownloadCover: false
+  offline: true
+
+defaults:
+  seriesFolders:
+      titleNamingConventions:
+      - "{{seriesName}}"
+      - "{{fileName}}"
+      outputNamingConventions:
+      - "{{seriesRoot}}{{seriesName}}\\{{fileName}}"
+      - "{{seriesRoot}}{{fileName}}\\{{fileName}}"
+
+  maintenanceFolder:
+    \Users\aleksandrsuvorov\UpscaleMangaM\
+
+  contentMetaData:
+    languageISO: en
+    manga: YesAndRightToLeft
+
+  filesToAllow:
+  - ComicEater.json
+  - ComicInfo.xml
+
+  filesToDelete:
+
+  filesToDeleteWithExtensions:
+  - "url"
+
+  junkToFilter:
+  - "(Shadowcat-Empire)"
+  - "[Shadowcat-Empire]"
+  - "(danke-Empire)"
+  - "[danke-Empire]"
+  - "[VIZ Media]"
+  - "{HQ}"
+  - "(LuCaZ)"
+  - "[dig]"
+  - "(Digital)"
+  - "(dig)"
+  - "[Digital]"
+  - "(ED)"
+  - "[ED]"
+  - DLraw.net-
+  - DLraw.net
+  - Dl-Raw.net-
+  - Dl-Raw.net
+  - DLRAW.net-net-
+  - DLRAW.net-net
+  - "manga-zone.org"
+  - ZipHot.Org-
+  - ZipHot.Org
+  - Cmczip.Com-
+  - Cmczip.Com
+  - 雑誌寄せ集め
+  - "[aKraa]"
+  - (一般コミック)
+  - (一般コミック／雑誌)
+  - (一般小説)
+  - "(完）"
+  - "(電)"
+  - "【一般コミック】"
+  - 【コミック】
+  - "[ハルタ]"
+  - "[Novel]"
+  - "[Raw]"
+  - "[lq]"
+  - "[end]"
+  - "[DPG]"
+  - " jp"
+  - "カラー版"
+  - "(raw)"
+  - "(文庫版)"
+  - "(文庫)"
+  - "文庫版"
+  - "_"
+
+  volumeNumberZeroPadding: 2
+  splitAuthorsBy:
+  - '×'
+  - '／'
+  - '・'
+
+
+  joinAuthorsBy: '・'
